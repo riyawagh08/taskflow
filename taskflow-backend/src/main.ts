@@ -8,7 +8,7 @@ async function bootstrap() {
   app.enableCors({
     origin: [
       'http://localhost:3000',
-      'https://taskflow-todo-liard-beta.vercel.app',
+      'https://taskflow-liard-beta.vercel.app',
     ],
     credentials: true,
   });
