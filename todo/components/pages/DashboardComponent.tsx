@@ -24,7 +24,7 @@ export default function DashboardComponent() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/auth/login`, {
+      const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/todos`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
