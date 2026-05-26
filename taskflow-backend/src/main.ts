@@ -6,10 +6,7 @@ async function bootstrap() {
 
   // ✅ IMPORTANT: allow frontend (3000) to talk to backend (3001)
   app.enableCors({
-    origin: [
-      'http://localhost:3000',
-      'https://taskflow-liard-beta.vercel.app',
-    ],
+    origin: true,
     credentials: true,
   });
 
